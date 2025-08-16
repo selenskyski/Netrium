@@ -1,4 +1,4 @@
-# netrium (Ultraviolet) Starter
+# nova (Ultraviolet) Starter
 
 A compact Ultraviolet + Node starter with a simple launcher UI.
 
