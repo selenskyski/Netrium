@@ -1,1 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nova Proxy</title>
+    <link rel="icon" href="/icons/favicon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Nova</h1>
+      <input id="url" type="text" placeholder="Enter a URL or search..." />
+      <button id="go">Go</button>
+      <button id="cloak" title="Quick hide (changes title & favicon)">Cloak</button>
+    </header>
 
+    <main>
+      <section>
+        <h2>Popular Games</h2>
+        <div id="games" class="grid"></div>
+      </section>
+
+      <section>
+        <h2>Open</h2>
+        <iframe id="frame" title="proxy" sandbox="allow-same-origin allow-scripts allow-forms allow-popups"></iframe>
+      </section>
+    </main>
+
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.handler.js"></script>
+    <script src="/uv/uv.client.js"></script>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
